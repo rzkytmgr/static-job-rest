@@ -1,0 +1,3 @@
+const errorHandlerMiddleware = () => {}
+
+export { errorHandlerMiddleware }

@@ -1,0 +1,49 @@
+{
+  "name": "job-grabber",
+  "version": "1.0.0",
+  "description": "Job Grabber",
+  "main": "./dist",
+  "dependencies": {
+    "@types/morgan": "^1.9.4",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "morgan": "^1.10.0",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "resolve-tspaths": "^0.8.3",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.2",
+    "tscpaths": "^0.0.9"
+  },
+  "scripts": {
+    "start": "yarn build:fix && node ./dist/app",
+    "dev": "node .",
+    "build": "tsc --project tsconfig.json && resolve-tspaths",
+    "build:fix": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s . -o ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "job",
+    "grabber",
+    "scraper",
+    "job api",
+    "api",
+    "job list"
+  ],
+  "repository": {
+    "directory": "job-grabber",
+    "url": "https://github.com/rzkytmgr/job-grabber"
+  },
+  "author": {
+    "email": "rzkytmgr@gmail.com",
+    "name": "rzkytmgr",
+    "url": "https://github.com/rzkytmgr"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": "14.x"
+  }
+}

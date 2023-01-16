@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@data/*": ["data/*"],
+      "@lib/*": ["app/lib/*"],
+      "@errors/*": ["app/errors/*"],
+      "@helper/*": ["app/helper/*"],
+      "@routes/*": ["app/routes/*"],
+      "@services/*": ["app/services/*"],
+      "@constants/*": ["app/constants/*"],
+      "@interfaces/*": ["app/interfaces/*"]
+    },
+    "sourceMap": true,
+    "outDir": "./dist",
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "include": ["./**/*"],
+  "exclude": ["node_modules"]
+}
