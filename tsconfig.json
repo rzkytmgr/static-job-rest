@@ -4,12 +4,14 @@
     "paths": {
       "@data/*": ["data/*"],
       "@lib/*": ["app/lib/*"],
+      "@bundle/*": ["app/bundle/*"],
       "@errors/*": ["app/errors/*"],
       "@helper/*": ["app/helper/*"],
       "@routes/*": ["app/routes/*"],
       "@services/*": ["app/services/*"],
       "@constants/*": ["app/constants/*"],
-      "@interfaces/*": ["app/interfaces/*"]
+      "@interfaces/*": ["app/interfaces/*"],
+      "@middlewares/*": ["app/middlewares/*"]
     },
     "sourceMap": true,
     "outDir": "./dist",
