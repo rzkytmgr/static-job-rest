@@ -2,16 +2,17 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@data/*": ["data/*"],
-      "@lib/*": ["app/lib/*"],
-      "@bundle/*": ["app/bundle/*"],
-      "@errors/*": ["app/errors/*"],
-      "@helper/*": ["app/helper/*"],
-      "@routes/*": ["app/routes/*"],
-      "@services/*": ["app/services/*"],
-      "@constants/*": ["app/constants/*"],
-      "@interfaces/*": ["app/interfaces/*"],
-      "@middlewares/*": ["app/middlewares/*"]
+      "@app/data/*": ["data/*"],
+      "@app/lib/*": ["app/lib/*"],
+      "@app/bundle/*": ["app/bundle/*"],
+      "@app/errors/*": ["app/errors/*"],
+      "@app/helper/*": ["app/helper/*"],
+      "@app/routes/*": ["app/routes/*"],
+      "@app/services/*": ["app/services/*"],
+      "@app/constants/*": ["app/constants/*"],
+      "@app/interfaces/*": ["app/interfaces/*"],
+      "@app/middlewares/*": ["app/middlewares/*"],
+      "@crawler/services/*": ["crawler/services/*"]
     },
     "sourceMap": true,
     "outDir": "./dist",
