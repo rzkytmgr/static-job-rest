@@ -1,4 +1,4 @@
-import { CustomError } from '@errors/index';
+import { CustomError } from '@app/errors/index';
 import { Request, Response, NextFunction } from 'express';
 
 const errorHandlerMiddleware = (error: CustomError, _req: Request, res: Response, _next: NextFunction) => {

@@ -2,8 +2,8 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 
-import { IBundle } from "@interfaces/index"; 
-import middlewares from "@middlewares/index";
+import { IBundle } from "@app/interfaces/index"; 
+import middlewares from "@app/middlewares/index";
 
 export const bundle: IBundle = {
   morgan,
