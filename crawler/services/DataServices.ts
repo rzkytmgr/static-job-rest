@@ -2,7 +2,7 @@ import fs, { promises as fspromise } from 'fs';
 import path from "path";
 
 export class DataServices {
-  public static dataUpdater(data: any, filename: string = "0", override: boolean = false) {
+  public static dataUpdater(data: any, override: boolean = false, filename: string = "0") {
     return new Promise(async (resolve, reject) => {
       try {
         const fileExtension = "json";
