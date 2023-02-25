@@ -3,6 +3,7 @@ name: "Jobs Crawler"
 on:
   schedule:
     - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 env:
   USER_EMAIL: ${{ secrets.USER_EMAIL }}
