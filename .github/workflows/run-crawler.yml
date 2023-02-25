@@ -11,7 +11,7 @@ env:
 jobs:
   crawler:
     runs-on: ubuntu-latest
-    step:
+    steps:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Setup Node and Yarn
