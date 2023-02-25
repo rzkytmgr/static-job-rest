@@ -2,7 +2,7 @@ name: "Jobs Crawler"
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: 0 5,17 * * * *
   workflow_dispatch:
 
 env:
