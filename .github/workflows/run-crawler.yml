@@ -1,4 +1,4 @@
-name: "Job Crawler"
+name: "Jobs Crawler"
 
 on:
   schedule:
