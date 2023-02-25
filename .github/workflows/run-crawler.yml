@@ -1,0 +1,34 @@
+name: "Job Crawler"
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+env:
+  USER_EMAIL: ${{ secrets.USER_EMAIL }}
+  USER_NAME: ${{ secrets.USER_NAME }}
+
+jobs:
+  crawler:
+    runs-on: ubuntu-latest
+    step:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Setup Node and Yarn
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          cache: "yarn"
+      - name: Dependencies Install
+        run: yarn install
+      - name: Crawling
+        run: "yarn run:crawler"
+      - name: Commit Setup
+        run: |
+          git config user.email $USER_EMAIL && git config user.name $USER_NAME
+          git commit -m "Data update (`date`)" -a
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "workflow"
